@@ -1,5 +1,18 @@
 console.log("hi Iam Created");
 
+//creation of changing colors
+
+var CoolColor = function(){
+    //creating a variable and assinging the class name to it,so that it can used to change in if.else statement
+    var CurrentClassName=document.getElementById('cool').className;
+    
+    if(CurrentClassName == 'cool'){
+        document.getElementById('cool').className='cool red';
+    }else{
+        document.getElementById('cool').className='cool';
+    }
+}
+
 var car={
 name:"Mini cooper",
 color:"Orange",
@@ -26,4 +39,5 @@ if(isOn==true){
 var SaymyName= function(name){
 alert("Your Name is: "+name);
 }
+
 
