@@ -24,21 +24,47 @@
   left: 50%;
   width: 20px;
   height: 100px;
-  transition: bottom 1000ms;
+  transition: bottom 5000ms;
 }
 
-.rocket.launch{
-    bottom:1000px;
-    }
-
-.ground{
-    width: 100%;
-    background-color: greenyellow;
-    height: 20px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    
+body.body-State1 .rocket {
+  transition: none;
 }
 
+body.body-State3 .rocket,
+body.body-State4 .rocket {
+  bottom: 1000px;
+}
 
+.State1,
+.State2,
+.State3,
+.State4,
+.State5 {
+  display: none;
+}
+
+.body-State1 .State1 {
+  display: block;
+}
+.body-State2 .State2 {
+  display: block;
+}
+.body-State3 .State3 {
+  display: block;
+}
+.body-State4 .State4 {
+  display: block;
+}
+.body-State5 .State5 {
+  display: block;
+}
+
+.ground {
+  width: 100%;
+  background-color: greenyellow;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
