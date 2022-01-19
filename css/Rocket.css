@@ -1,0 +1,44 @@
+.left {
+  background-color: rgba(0, 255, 255, 0.801);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.right {
+  background-color: rgb(245, 241, 246);
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.rocket {
+  background-color: blue;
+  /* It positions itself according to it's parent element that's why "absolute" is used here parent element is 'right' class above. see in HTML to have an idea */
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 20px;
+  height: 100px;
+  transition: bottom 1000ms;
+}
+
+.rocket.launch{
+    bottom:1000px;
+    }
+
+.ground{
+    width: 100%;
+    background-color: greenyellow;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+
+
