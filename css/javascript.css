@@ -5,16 +5,17 @@ body {
 }
 
 .cool {
-  background-color: grey;
-  color: aqua;
-  font-size: 1.5rem;
-  margin: 10 auto;
-  width: 50%;
-  border: 2px;
-  padding: 10px;
-  text-align: center;
-  align-items: center;
-  transition: background-color 1s;
+    position: absolute;
+    left: 150px;
+    background-color: grey;
+    color: aqua;
+    font-size: 1.5rem;
+    width: 50% ;
+    border: 2px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    transition: background-color 1s;
 }
 .cool.red {
   background-color: blue;
