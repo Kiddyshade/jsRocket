@@ -1,3 +1,6 @@
+setTimeout(function(){
+    location.href='Rocket.html';
+},2000)
 console.log("hi Iam Created");
 
 //creation of changing colors

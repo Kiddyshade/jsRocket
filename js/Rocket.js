@@ -1,3 +1,4 @@
+alert('Send Me Screenshot If you Win !!!');
 console.log('Hi there iam created.');
 
 
@@ -15,7 +16,18 @@ var ChangeState=function(state){
         timer = setInterval(function(){
             CountDownNumber=CountDownNumber-1;
             document.getElementById('countdown').innerHTML=CountDownNumber;
-            
+            if (CountDownNumber >1 && CountDownNumber<=4){
+                document.getElementById('cantwait').className='cantwait show'
+            }else{
+                document.getElementById('cantwait').className='cantwait'
+            }
+
+            if (CountDownNumber >4 && CountDownNumber<=7){
+                document.getElementById('nervous').className='nervous show'
+            }else{
+                document.getElementById('nervous').className='nervous'
+            }
+
             if(CountDownNumber<=0){
                 ChangeState(3);
             }

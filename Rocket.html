@@ -10,35 +10,36 @@
 </head>
 <body class="body-State1">
     <div class="left">
-        <div class="State1">
+        <div class="interface State1">
             <h1>Hi Their Ready for a Rocket Launch</h1>
             <a href="#" class="button" onclick="ChangeState(2);">Launch</a>
         </div>
 
-        <div class="State2">
+        <div class="interface State2">
             <h1 id='countdown'>10</h1>
-            <a href="#" class="button" onclick="ChangeState(1);">Abort</a>
+            <a href="#"  class="button" onclick="ChangeState(1);">Abort</a>
         </div>
 
-        <div class="State3">
+        <div class="interface State3">
             <h1>Lift Off!</h1>
         </div>
 
-        <div class="State4">
+        <div class="interface State4">
             <h1>Well Done!</h1>
             <a href="#" class="button" onclick="ChangeState(1);">Do it Again!</a>
         </div>
 
-        <div class="State5">
+        <div class="interface State5">
             <h1>Oh No!!!</h1>
             <a href="#" class="button" onclick="ChangeState(1);">Try Again!</a>
         </div>
     </div>
     <div class="right">
-        <div class="rocket">
-        
-        </div>
         <div class="ground"></div>
+        <div class="rocket"></div>
+        <div class="nervous" id="nervous"></div>
+        <div class="cantwait" id="cantwait"></div>
+        
     </div>
     <script src="js/Rocket.js"></script>
 </body>
