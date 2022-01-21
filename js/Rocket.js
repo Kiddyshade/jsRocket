@@ -1,4 +1,4 @@
-alert('Send Me Screenshot If you Win !!!');
+// alert('Send Me Screenshot If you Win !!!');
 console.log('Hi there iam created.');
 
 
@@ -48,4 +48,3 @@ var ChangeState=function(state){
 
     }
 }
-
